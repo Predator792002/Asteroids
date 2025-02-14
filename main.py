@@ -1,8 +1,10 @@
 import pygame
+import sys
 from constants import *
 from player import Player
 from asteroid import Asteroid
 from asteroidfield import AsteroidField
+from circleshape import CircleShape
 
 
 def main():
@@ -14,7 +16,7 @@ def main():
     drawable = pygame.sprite.Group()
 
     Player.containers = (updatable, drawable)
-
+# this is just test texts this does not mean anything but let me say that the manhua i am reading 
     player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
 
     dt = 0
@@ -28,6 +30,10 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
+        for ast in asteroids:
+            if ast.collisions(player):
+                print("Game over!")
+                sys.exit()
 
         for obj in updatable:
             obj.update(dt)
