@@ -22,8 +22,8 @@ Asteroids is a classic arcade-style space shooter game built using Python and Py
 1. Clone this repository:
 
    ```sh
-   git clone https://github.com/yourusername/asteroids.git
-   cd asteroids
+   git clone https://github.com/Predator792002/Asteroids.git
+   cd Asteroids
    ```
 
 2. Create a virtual environment (optional but recommended):
@@ -66,7 +66,7 @@ Asteroids is a classic arcade-style space shooter game built using Python and Py
 
 Feel free to fork the repository and submit pull requests for improvements or bug fixes!
 
-## Screenshots (Optional)
+## Screenshots
 
 ![Screenshot of game](/Screenshot%20From%202025-02-15%2011-17-04.png)
 
